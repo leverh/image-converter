@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Converter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Convert Your Images</h2>
+    <div class="drop-area" id="drop-area">
+      Drag & Drop Images Here or Click to Select
+      <input type="file" id="file-input" name="images" multiple style="display:none" required>
+    </div>
+    <ul id="file-list" class="file-list"></ul>
+    <p class="note">
+      <strong>Note:</strong> If you upload a single image, it will be returned as a direct download.<br>
+      If you upload multiple images, the converted files will be returned in a ZIP archive automatically.
+    </p>
+    <form id="convert-form">
+      <select name="format">
+        <option value="webp">WebP</option>
+        <option value="png">PNG</option>
+        <option value="jpeg">JPEG</option>
+        <option value="gif">GIF</option>
+      </select>
+      <input type="number" name="quality" placeholder="Quality (0-100)">
+      <input type="number" name="width" placeholder="Resize Width (px)">
+      <button type="submit">Convert</button>
+    </form>
+    <div id="loading">
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <circle class="spinner" cx="12" cy="12" r="10" fill="none" stroke="#3498db" stroke-width="2" stroke-dasharray="31.4 31.4" />
+            </svg>
+            <span>Converting images...</span>
+    </div>
+  </div>
+  <footer class="footer">
+    <p>© 2025 <a href="https://pixelsummit.dev/" target="_blank">PixelSummit</a> | <a href="https://github.com/leverh/image-converter" target="_blank">GitHub</a></p>
+    <p class="license">Released under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
