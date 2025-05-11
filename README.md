@@ -3,7 +3,7 @@
 A lightweight, privacy-focused web application for developers who need quick image conversions without the security concerns of online tools.
 This application allows you to convert images between WebP, PNG, JPEG, and GIF formats with optional quality adjustments and resizing—all processed locally on your machine. 
 
-I built this tool to my own life easier - eliminating the time-consuming process of image conversion while keeping sensitive assets away from third-party web services that may compromise data privacy. 
+I built this tool to make my own life easier - eliminating the time-consuming process of image conversion while keeping sensitive assets away from third-party web services that may compromise data privacy. 
 
 ![Image Converter Preview](./public/image-converter-screenshot.png)
 
